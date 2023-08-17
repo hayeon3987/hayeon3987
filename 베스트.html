@@ -77,12 +77,19 @@
             margin: 30px auto; /* 가로선의 위아래 여백을 조절 */
             width: 80%; /* 가로선의 너비를 조절 */
         }
+
+        /* 1*3 그리드 스타일 추가 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
     </style>
 </head>
 
 <body>
     <section class="hero">
-      <a href="index.html>  <img src="로고.jpg" alt="로고" /> </a>
+        <img src="로고.jpg" alt="로고" />
     </section>
 
     <header style="background-color: #E2DBBF;"></header>
@@ -118,8 +125,8 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row card-grid">
+            <div class="col-md-4">
                 <div class="card">
                     <a href="거품라떼.html">
                         <img src="거품라떼.jpg" class="card-img-top" alt="거품라떼 이미지">
@@ -131,7 +138,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card">
                     <a href="곰돌이 초콜릿.html">
                         <img src="곰돌이 초콜릿.jpg" class="card-img-top" alt="곰돌이 초콜릿 이미지">
